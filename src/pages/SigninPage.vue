@@ -49,6 +49,15 @@ export default {
       password: ref(""),
     };
   },
+  data() {
+    return {
+      user_name: "",
+      password: "",
+    };
+  },
+  methods: {
+    signinPage() {},
+  },
 };
 </script>
 <style lang="scss">

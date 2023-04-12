@@ -12,7 +12,7 @@
           <q-item>
             <q-item-section avatar>
               <q-avatar>
-                <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
+                <img src="../assets/unnamed.jpg" />
               </q-avatar>
             </q-item-section>
 
@@ -36,7 +36,7 @@
         <q-item class="fixed">
           <q-item-section avatar>
             <q-avatar size="48px">
-              <img src="https://cdn.quasar.dev/img/boy-avatar.png" />
+              <img src="../assets/unnamed.jpg" />
             </q-avatar>
           </q-item-section>
 
@@ -65,14 +65,16 @@ export default {
           date: 123123131,
           caption: "Golden Gate Bridge",
           location: "Lahore, Punjab, Pakistan",
-          imageUrl: "https://cdn.quasar.dev/img/parallax2.jpg",
+          imageUrl:
+            "https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_960_720.jpg",
         },
         {
           id: 2,
           date: 123123131,
           caption: "Golden Gate Bridge",
           location: "Lahore, Punjab, Pakistan",
-          imageUrl: "https://cdn.quasar.dev/img/parallax2.jpg",
+          imageUrl:
+            "https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_960_720.jpg",
         },
         {
           id: 3,
@@ -93,22 +95,40 @@ export default {
           date: 123123131,
           caption: "Golden Gate Bridge",
           location: "Lahore, Punjab, Pakistan",
-          imageUrl: "https://cdn.quasar.dev/img/parallax2.jpg",
+          imageUrl:
+            "https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_960_720.jpg",
         },
         {
           id: 6,
           date: 123123131,
           caption: "Golden Gate Bridge",
           location: "Lahore, Punjab, Pakistan",
-          imageUrl: "https://cdn.quasar.dev/img/parallax2.jpg",
+          imageUrl:
+            "https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_960_720.jpg",
         },
       ],
     };
+  },
+  methods: {
+    getPosts() {
+      console.log("getPosts");
+      this.$axios
+        .getPosts("http://localhost:3000/post")
+        .then((res) => {
+          console.log("response", res);
+        })
+        .catch((error) => {
+          console.log("error", error);
+        });
+    },
   },
   filters: {
     niceDate(value) {
       return date.formatDate(value, "MMMM D h:mmA");
     },
+  },
+  created() {
+    this.getPosts;
   },
 };
 </script>
