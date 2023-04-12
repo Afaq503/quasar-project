@@ -1,35 +1,4 @@
 <template>
-  <!-- <div class="q-pa-md constraint-signin" position="fixed-center">
-    <div class="header">
-      <q-toolbar-title class="text-grand-hotel text-bold">
-        InstagClone
-      </q-toolbar-title>
-    </div>
-
-    <div class="">
-      <q-input
-        class="text-box"
-        outlined
-        v-model="user_name"
-        label="Username"
-        placeholder="Username"
-      />
-    </div>
-    <div class="">
-      <q-input
-        class="text-box"
-        type="password"
-        outlined
-        v-model="password"
-        label="Password"
-        placeholder="Password"
-      />
-    </div>
-    <div>
-      <q-btn color="info" label="Log in" />
-    </div>
-  </div> -->
-
   <form @submit="Login()">
     <div class="q-pa-md constraint-signup" position="fixed-center">
       <div class="header">
