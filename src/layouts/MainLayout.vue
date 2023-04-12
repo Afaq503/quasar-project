@@ -34,13 +34,13 @@
           icon="eva-arrowhead-down-outline"
         >
           <q-list>
-            <q-item to="/signup" clickable v-close-popup @click="onItemClick">
+            <q-item to="/signin" clickable v-close-popup @click="onItemClick">
               <q-item-section>
                 <q-item-label>Login</q-item-label>
               </q-item-section>
             </q-item>
 
-            <q-item to="/signin" clickable v-close-popup @click="onItemClick">
+            <q-item to="/signup" clickable v-close-popup @click="onItemClick">
               <q-item-section>
                 <q-item-label>Signup</q-item-label>
               </q-item-section>
