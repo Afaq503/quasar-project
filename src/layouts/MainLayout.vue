@@ -24,6 +24,30 @@
           icon="eva-home-outline"
           size="18px"
         />
+        <q-btn-dropdown
+          class="large-screen-only q-mr-sm"
+          icon="eva-arrowhead-down-outline"
+        >
+          <q-list>
+            <q-item to="/signup" clickable v-close-popup @click="onItemClick">
+              <q-item-section>
+                <q-item-label>Login</q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <q-item to="/signin" clickable v-close-popup @click="onItemClick">
+              <q-item-section>
+                <q-item-label>Signup</q-item-label>
+              </q-item-section>
+            </q-item>
+
+            <!-- <q-item clickable v-close-popup @click="onItemClick">
+              <q-item-section>
+                <q-item-label>Profile</q-item-label>
+              </q-item-section>
+            </q-item> -->
+          </q-list>
+        </q-btn-dropdown>
       </q-toolbar>
     </q-header>
 
