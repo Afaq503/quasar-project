@@ -12,6 +12,11 @@
           size="18px"
         />
         <q-separator class="large-screen-only" vertical spaced />
+        <q-img
+          src="../.././src/assets/logoinsta.jpg"
+          style="width: 40px"
+          :ratio="1"
+        />
         <q-toolbar-title class="text-grand-hotel text-bold">
           InstagClone
         </q-toolbar-title>
